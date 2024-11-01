@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Outdoor Activities Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="photon.min.css" />
+</head>
+<body>
+    <header>
+        <h1>Outdoor Activities Manager</h1>
+        <nav>
+            <ul>
+                <li><a href="weather.html">Weather Forecast</a></li>
+                <li><a href="index.html" class="manage-activities">Manage Activities</a></li>
+            </ul>
+        </nav>
+        
+        
+    </header>
+    <div class="mainWrapper">
+        <h2>Manage Your Outdoor Activities</h2>
+        <form>
+            <div class="form-group">
+                <label>Activity Name</label> <!-- Updated label -->
+                <input id="activityName" type="text" class="form-control" placeholder="Enter activity name">
+            </div>
+            <div class="form-group">
+                <label>Required Equipment / Notes</label> <!-- Updated label -->
+                <textarea id="activityDetails" class="form-control" rows="5" placeholder="Enter required equipment or notes"></textarea>
+            </div>
+        </form>
+        <button id="btnCreate" class="btn btn-default">Create</button>
+        <button id="btnRead" class="btn btn-default">Read</button>
+        <button id="btnUpdate" class="btn btn-default">Update</button>
+        <button id="btnDelete" class="btn btn-default">Delete</button>
+
+        <div id="displayContents" class="display-area"></div>
+    </div>
+
+    <script src="main.js"></script> <!-- Link to renderer script -->
+</body>
+</html>

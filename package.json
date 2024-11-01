@@ -1,0 +1,18 @@
+{
+  "name": "weatherwise-crud",
+  "version": "1.0.0",
+  "description": "WeatherWise Application with Weather Forecasting and Activity CRUD",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "devDependencies": {
+    "electron": "^23.1.0",
+    "electron-forge": "^6.0.0-beta.58"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  }
+}

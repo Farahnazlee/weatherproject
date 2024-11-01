@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WeatherWise - 5-Day Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><span>WEATHER</span> FORECAST</h1>
+        <nav>
+            <ul>
+                <li><a href="weather.html">Weather Forecast</a></li>
+                <li><a href="index.html" class="manage-activities">Manage Activities</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="weather-info-box">
+
+    <p class="location-info" id="location-info">Enter a location to view the weather forecast</p>
+    <!-- Location input form -->
+    <div class="location-input">
+        <input type="text" id="location-input" placeholder="Enter location (e.g., Lagos)">
+        <button onclick="fetchWeather()">Get Forecast</button>
+    </div>
+</div>
+
+    <!-- Forecast display container -->
+    <div class="forecast-wrapper">
+        <div id="forecast" class="forecast-display">
+            <!-- 5-day forecast and current weather will be displayed here -->
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>

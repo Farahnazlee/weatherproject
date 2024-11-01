@@ -1,0 +1,258 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: url('pic.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+/* Style for the main title */
+h1 {
+    font-size: 3em;         /* Adjust font size as needed */
+    font-weight: bold;      /* Make text bold */
+    color: white;           /* Ensure text is white for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adds a shadow for readability */
+}
+
+/* Style for the subtitle or navigation */
+h2 {
+    font-size: 1.5em;       /* Adjust size as needed */
+    font-weight: bold;      /* Make text bold */
+    color: lightblue;       /* Use a lighter color to match theme but stand out */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+}
+/* Style for the navigation list */
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    display: flex; /* Align items horizontally */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center-align navigation items */
+}
+
+/* Style for each navigation item */
+nav ul li {
+    font-size: 1.5em; /* Increase font size for visibility */
+    font-weight: bold; /* Make text bold */
+}
+
+/* General style for all navigation links */
+nav ul li a {
+    color: lightblue; /* Default color for links */
+    text-decoration: none; /* Remove underline */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for readability */
+    font-size: 1.5em; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+/* Specific style for the "Manage Activities" link */
+nav ul li a.manage-activities {
+    color: white; /* Set color to white specifically for "Manage Activities" */
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+header h1 span {
+    color: #29ABE2;
+}
+
+/* Updated Nav Styles */
+header nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #29ABE2;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #258ac9;
+    text-decoration: underline;
+}
+/* Weather Info Box Styling */
+.weather-info-box {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: #ffffff; /* White text color for readability */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}
+
+.weather-info-box h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #A4E5AC; /* Soft green color for the main header */
+}
+
+.weather-info-box p {
+    margin: 5px 0;
+    font-size: 1.1em;
+    color: #ffffff; /* White text for readability */
+}
+
+
+/* Main Wrapper for Activity Manager */
+.mainWrapper {
+    max-width: 600px; /* Set a narrower maximum width */
+    margin: 25px auto; /* Center horizontally on the page */
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Additional form-group styling if needed */
+.form-group input, .form-group textarea {
+    max-width: 100%; /* Keep inputs within container width */
+}
+
+.form-group label {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #29ABE2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #258ac9;
+}
+
+/* Display area styling */
+.display-area {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    color: #555;
+}
+
+/* Weather Forecast Section */
+.location-input {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.location-input input {
+    padding: 10px;
+    width: 250px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.location-input button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #29ABE2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.location-input button:hover {
+    background-color: #258ac9;
+}
+
+.location-info {
+    font-size: 1.2em;
+    color: #A4E5AC;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Forecast container styling */
+.forecast-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.forecast-display {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.forecast-day {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.forecast-day h3 {
+    font-size: 1.1em;
+    color: #29ABE2;
+    margin-bottom: 10px;
+}
+
+.forecast-day img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.forecast-day p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.forecast-day p strong {
+    color: #29ABE2;
+    font-weight: bold;
+}
